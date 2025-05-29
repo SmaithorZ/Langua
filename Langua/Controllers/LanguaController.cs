@@ -1,9 +1,17 @@
-﻿using Microsoft.AspNetCore.Mvc;
+﻿using Langua.Data;
+using Microsoft.AspNetCore.Mvc;
 
 namespace Langua.Controllers
 {
     public class LanguaController : Controller
     {
+
+        private readonly AppDbContext _context;
+
+        public LanguaController(AppDbContext context)
+        {
+            _context = context;
+        }
         public IActionResult Index()
         {
             return View();
