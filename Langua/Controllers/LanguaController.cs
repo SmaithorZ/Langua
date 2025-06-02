@@ -16,5 +16,22 @@ namespace Langua.Controllers
         {
             return View();
         }
+
+
+        public IActionResult Swedish()
+        {
+            return View();
+        }
+
+        public IActionResult Polish()
+        {
+            return View();
+        }
+
+        public IActionResult Russian()
+        {
+            return View();
+        }
+
     }
 }
