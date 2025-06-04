@@ -12,6 +12,6 @@
 
         public string Level { get; set; }
 
-
+        public string Slug { get; set; }
     }
 }
