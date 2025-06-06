@@ -1,0 +1,15 @@
+﻿@model Text
+
+@{
+    ViewData["Title"] = Model.TextTitle;
+}
+
+
+<h2>@Model.TextTitle (@Model.Level.ToUpper())</h2>
+
+<p><strong>Language:</strong>@Model.Language</p>
+
+<hr/>
+
+<p>@Model.LanguageText</p>
+

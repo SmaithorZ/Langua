@@ -1,1 +1,14 @@
-﻿<p>test</p>
+﻿@model IEnumerable<Text>
+
+<h2>Polish Texts</h2>
+
+<ul>
+    @foreach (var text in Model)
+    {
+        <a asp-controller="Langua"
+           asp-action="ReadText"
+           asp-route-language="@text.Language.ToLower()"
+           asp-route-level="@text.Level.ToLower()"
+           asp-route-slug="@text.Slug"></a>
+    }
+</ul>
