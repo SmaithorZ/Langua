@@ -38,29 +38,35 @@ namespace Langua.Controllers
 
         public IActionResult Swedish()
         {
-            var swedishTexts = _context.Texts
-                .Where(t => t.Language.ToLower() == "swedish")
-                .ToList();
+            var texts = _context.Texts
+             .Where(t => t.Language.ToLower() == "swedish")
+             .OrderBy(t => t.Level)
+             .ThenBy(t => t.TextTitle)
+             .ToList();
 
-            return View(swedishTexts);
+            return View(texts);
         }
 
         public IActionResult Polish()
         {
-            var polishTexts = _context.Texts
-                .Where(t => t.Language.ToLower() == "polish")
-                .ToList();
+            var texts = _context.Texts
+             .Where(t => t.Language.ToLower() == "polish")
+             .OrderBy(t => t.Level)
+             .ThenBy(t => t.TextTitle)
+             .ToList();
 
-            return View(polishTexts);
+            return View(texts);
         }
 
         public IActionResult Russian()
         {
-            var russianTexts = _context.Texts
-                .Where(t => t.Language.ToLower() == "russian")
-                .ToList();
+            var texts = _context.Texts
+            .Where(t => t.Language.ToLower() == "russian")
+            .OrderBy(t => t.Level)
+            .ThenBy(t => t.TextTitle)
+            .ToList();
 
-            return View(russianTexts);
+            return View(texts);
         }
 
     }

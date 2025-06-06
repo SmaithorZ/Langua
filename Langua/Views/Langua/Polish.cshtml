@@ -1,14 +1,28 @@
 ﻿@model IEnumerable<Text>
 
-<h2>Polish Texts</h2>
+@{
+    ViewData["Title"] = "Polish Texts";
+    var groupedByLevel = Model.GroupBy(t => t.Level.ToUpper());
+}
 
-<ul>
-    @foreach (var text in Model)
+<h2 class="mb-4 text-center">Polish Reading Texts</h2>
+<div class="border border-2 border-dark-subtle rounded p-3 bg-light shadow-lg">
+    @foreach (var levelGroup in groupedByLevel)
     {
-        <a asp-controller="Langua"
-           asp-action="ReadText"
-           asp-route-language="@text.Language.ToLower()"
-           asp-route-level="@text.Level.ToLower()"
-           asp-route-slug="@text.Slug"></a>
+        <h4 class="mt-4 p-2">Level @levelGroup.Key</h4>
+        <div class="row g-2 border border-secondary-subtle rounded p-3 bg-light">
+            @foreach (var text in levelGroup)
+            {
+                <div class="col-md-6 mb-2">
+                    <a class="text-danger fw-medium" style="font-size:1rem" asp-controller="Langua"
+                       asp-action="ReadText"
+                       asp-route-language="@text.Language.ToLower()"
+                       asp-route-level="@text.Level.ToLower()"
+                       asp-route-slug="@text.Slug">
+                        @text.TextTitle
+                    </a>
+                </div>
+            }
+        </div>
     }
-</ul>
+</div>
