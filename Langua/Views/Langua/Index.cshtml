@@ -1,12 +1,46 @@
 ﻿
-<h2>Languages:</h2>
+<div class="container mt-4">
+    <h5 class="mb-4 fw-bold">Which Language do you wish to learn?</h5>
+    <div class="row row-cols-1 row-cols-md-2 g-3">
 
+        <!-- Language card -->
+        <div class="col">
+            <a asp-controller="Langua" class="text-decoration-none" asp-action="Swedish">
+                <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm border">
+                    <img src="https://flagcdn.com/w40/se.png" alt="SE Flag" class="me-3" style="width: 30px;">
+                    <span class="fw-medium text-dark">Swedish</span>
+                </div>
+            </a>
+               
+            
+        </div>
 
-    <ul>
-        <li><a asp-controller="Langua" asp-action="Swedish">Swedish</a></li>
-        <li><a asp-controller="Langua" asp-action="Polish">Polish</a></li>
-        <li><a asp-controller="Langua" asp-action="Russian">Russian</a></li>
-    </ul>
+        <div class="col">
+            <a asp-controller="Langua" class="text-decoration-none" asp-action="Polish">
+                <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm border">
+                    <img src="https://flagcdn.com/w40/pl.png" alt="PL Flag" class="me-3" style="width: 30px;">
+                    <span class="fw-medium text-dark">Polish</span>
+                </div>
+            </a>
+        </div>
+
+        <div class="col">
+            <a asp-controller="Langua" class="text-decoration-none" asp-action="Russian">
+                <div class="d-flex align-items-center p-3 bg-white rounded shadow-sm border">
+                    <img src="https://flagcdn.com/w40/ru.png" alt="RU Flag" class="me-3" style="width: 30px;">
+                    <span class="fw-medium text-dark">Russian</span>
+                </div>
+            </a>
+        </div>
+
+    </div>
+
+</div>
+    
+        
+        
+        
+    
 
 
    
