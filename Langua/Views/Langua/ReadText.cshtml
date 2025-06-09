@@ -4,12 +4,25 @@
     ViewData["Title"] = Model.TextTitle;
 }
 
+<style>
+    .preserve-linebreaks br{
+        display:block;
+        margin-bottom:0.75rem;
+    }
+</style>
 
-<h2>@Model.TextTitle (@Model.Level.ToUpper())</h2>
+<h2 class="text-center">@Model.TextTitle (@Model.Level.ToUpper())</h2>
 
-<p><strong>Language:</strong>@Model.Language</p>
+<p><strong>Language: </strong>@Model.Language</p>
 
-<hr/>
+<div class="border border-2 border-dark-subtle rounded p-3 bg-light shadow-lg">
+    <p class="preserve-linebreaks">@Html.Raw(Model.LanguageText.Replace("\n", "<br>"))</p>
+</div>
+<div class="m-4 text-center">
+    <a asp-controller="Langua" asp-action="Index" class="btn btn-success m-2">
+        Go Back
+    </a>
+</div>
 
-<p>@Model.LanguageText</p>
+
 
