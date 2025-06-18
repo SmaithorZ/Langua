@@ -5,25 +5,56 @@
 }
 
 <style>
-    .preserve-linebreaks br{
-        display:block;
-        margin-bottom:0.75rem;
+    .preserve-linebreaks br {
+        display: block;
+        margin-bottom: 0.75rem;
     }
-   
+
+    .flex-container {
+        display: flex;
+        justify-content: space-between;
+        gap: 2rem;
+        flex-wrap: wrap;
+    }
+
+    .left-column {
+        flex: 1;
+        min-width: 300px;
+    }
+
+    .right-column {
+        flex: 1;
+        min-width: 300px;
+        background-color: #f8f9fa;
+        padding: 1rem;
+        border-radius: 8px;
+        box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    }
 </style>
 
 <h2 class="text-center">@Model.TextTitle (@Model.Level.ToUpper())</h2>
-
 <p><strong>Language: </strong>@Model.Language</p>
 
-<div class="border border-2 border-dark-subtle rounded p-3 bg-light shadow-lg">
-    <p class="preserve-linebreaks">@Html.Raw(Model.LanguageText.Replace("\n", "<br>"))</p>
+<div class="flex-container">
+    <!-- LEFT COLUMN - TEXT -->
+    <div class="left-column">
+        <div class="border border-2 border-dark-subtle rounded p-3 bg-light shadow-lg">
+            <p class="preserve-linebreaks">@Html.Raw(Model.LanguageText.Replace("\n", "<br>"))</p>
+        </div>
+    </div>
+
+    <!-- RIGHT COLUMN - PLACEHOLDER FOR QUESTIONS -->
+    <div class="right-column">
+        <h5>Did you understand the text?</h5>
+        <p>Please answer the following questions of understanding:</p>
+
+        <!-- Placeholder for now -->
+        <p><em>Questions will appear here soon...</em></p>
+    </div>
 </div>
+
 <div class="m-4 text-center">
     <a asp-controller="Langua" asp-action="Index" class="btn btn-success m-2">
         Go Back
     </a>
 </div>
-
-
-
