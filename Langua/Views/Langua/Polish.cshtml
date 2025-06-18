@@ -5,24 +5,85 @@
     var groupedByLevel = Model.GroupBy(t => t.Level.ToUpper());
 }
 
-<h2 class="mb-4 text-center">Polish Reading Texts</h2>
-<div class="border border-2 border-dark-subtle rounded p-3 bg-light shadow-lg">
-    @foreach (var levelGroup in groupedByLevel)
-    {
-        <h4 class="mt-4 p-2">Level @levelGroup.Key</h4>
-        <div class="row g-2 border border-secondary-subtle rounded p-3 bg-light">
-            @foreach (var text in levelGroup)
-            {
-                <div class="col-md-6 mb-2">
-                    <a class="text-danger fw-medium" style="font-size:1rem" asp-controller="Langua"
-                       asp-action="ReadText"
-                       asp-route-language="@text.Language.ToLower()"
-                       asp-route-level="@text.Level.ToLower()"
-                       asp-route-slug="@text.Slug">
-                        @text.TextTitle
-                    </a>
-                </div>
-            }
-        </div>
+<style>
+
+    .main-container {
+        max-width: 1000px;
+        margin: 0 auto;
     }
+
+    .content-box {
+        display: flex;
+        gap: 20px;
+        align-items: flex-start;
+        background: #fff;
+        border-radius: 8px;
+        padding: 20px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+        margin-bottom: 20px;
+    }
+
+    .content-image {
+        width: 300px;
+        height: auto;
+        border-radius: 8px;
+    }
+
+    .content-text {
+        flex: 1;
+    }
+
+    .section-title {
+        display: flex;
+        align-items: center;
+        margin-left: 20px; /* matches content-box padding */
+        margin-bottom: 1px;
+        font-size: 1.5rem;
+        font-weight: bold;
+    }
+
+    .texts-container {
+        background-color: #f8f9fa;
+        padding: 20px;
+        border-radius: 8px;
+        box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    }
+</style>
+
+<div class="main-container">
+    <!-- Title aligned with image edge -->
+    <h4 class="section-title">
+        <img src="https://upload.wikimedia.org/wikipedia/commons/1/12/Flag_of_Poland.svg"
+             alt="Polish Flag" style="width: 30px; height: auto; margin-right: 5px;" />Polish Reading Texts
+    </h4>
+
+    <div class="content-box">
+        <img src="~/Poland.jpg" alt="Poland" class="content-image" />
+
+        <div class="content-text">
+            <p>Are you interested in learning Polish? Here we offer you an essential resource: Texts in Polish of different levels and topics, that will help you improve your level of the language.</p>
+            <p>These texts were written by professionals in the teaching of the Polish language. They are intended for people who want to learn or improve their level in Polish.</p>
+        </div>
+    </div>
+
+    <div class="texts-container">
+        @foreach (var levelGroup in groupedByLevel)
+        {
+            <h4 class="mt-4 p-2">Level @levelGroup.Key</h4>
+            <div class="row g-2 border border-secondary-subtle rounded p-3 bg-light">
+                @foreach (var text in levelGroup)
+                {
+                    <div class="col-md-6 mb-2">
+                        <a class="text-danger fw-medium" style="font-size:1rem" asp-controller="Langua"
+                           asp-action="ReadText"
+                           asp-route-language="@text.Language.ToLower()"
+                           asp-route-level="@text.Level.ToLower()"
+                           asp-route-slug="@text.Slug">
+                            @text.TextTitle
+                        </a>
+                    </div>
+                }
+            </div>
+        }
+    </div>
 </div>
