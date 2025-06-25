@@ -11,6 +11,8 @@ namespace Langua.Data
 
        public DbSet<Text> Texts { get; set; }
 
+        public DbSet<Question> Questions { get; set; }
+
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Text>().HasData(
@@ -507,6 +509,60 @@ namespace Langua.Data
 
                 
                 
+                );
+
+            modelBuilder.Entity<Question>().HasData(
+
+                //Questions for the Text: Mitt husdjur
+                new Question
+                {
+                    Id = 1,
+                    TextId = 1,
+                    Content = "Hur gammal är Emma?",
+                    option1 = "Tio år",
+                    option2 = "Tretton år",
+                    option3 = "Fjorton år",
+                    option4 = "Tolv år",
+                    CorrectOption = 2
+                },
+
+                new Question
+                {
+                    Id = 2,
+                    TextId = 1,
+                    Content = "Vad heter Emmas hund?",
+                    option1 = "Leo",
+                    option2 = "Max",
+                    option3 = "Lukas",
+                    option4 = "Rex",
+                    CorrectOption = 2
+                },
+
+                new Question
+                {
+                    Id = 3,
+                    TextId = 1,
+                    Content = " Vad kan Max göra enligt texten?",
+                    option1 = "Prata och hoppa",
+                    option2 = "Rulla runt och skälla",
+                    option3 = "Sitta, ligga och ge tass",
+                    option4 = "Simma och dansa",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 4,
+                    TextId = 1,
+                    Content = "Vad gör familjen ibland på helgerna?",
+                    option1 = "Går på bio",
+                    option2 = "Åker till landet",
+                    option3 = "Besöker farföräldrarna",
+                    option4 = "Tittar på TV hela dagen",
+                    CorrectOption = 2
+                }
+
+
                 );
         }
     }

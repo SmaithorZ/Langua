@@ -3,6 +3,7 @@ using Langua.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Langua.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250625123637_AddQuestions")]
+    partial class AddQuestions
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -60,52 +63,6 @@ namespace Langua.Migrations
                     b.HasIndex("TextId");
 
                     b.ToTable("Questions");
-
-                    b.HasData(
-                        new
-                        {
-                            Id = 1,
-                            Content = "Hur gammal är Emma?",
-                            CorrectOption = 2,
-                            TextId = 1,
-                            option1 = "Tio år",
-                            option2 = "Tretton år",
-                            option3 = "Fjorton år",
-                            option4 = "Tolv år"
-                        },
-                        new
-                        {
-                            Id = 2,
-                            Content = "Vad heter Emmas hund?",
-                            CorrectOption = 2,
-                            TextId = 1,
-                            option1 = "Leo",
-                            option2 = "Max",
-                            option3 = "Lukas",
-                            option4 = "Rex"
-                        },
-                        new
-                        {
-                            Id = 3,
-                            Content = " Vad kan Max göra enligt texten?",
-                            CorrectOption = 3,
-                            TextId = 1,
-                            option1 = "Prata och hoppa",
-                            option2 = "Rulla runt och skälla",
-                            option3 = "Sitta, ligga och ge tass",
-                            option4 = "Simma och dansa"
-                        },
-                        new
-                        {
-                            Id = 4,
-                            Content = "Vad gör familjen ibland på helgerna?",
-                            CorrectOption = 2,
-                            TextId = 1,
-                            option1 = "Går på bio",
-                            option2 = "Åker till landet",
-                            option3 = "Besöker farföräldrarna",
-                            option4 = "Tittar på TV hela dagen"
-                        });
                 });
 
             modelBuilder.Entity("Langua.Models.Text", b =>
