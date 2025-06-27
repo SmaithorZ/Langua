@@ -560,6 +560,55 @@ namespace Langua.Data
                     option3 = "Besöker farföräldrarna",
                     option4 = "Tittar på TV hela dagen",
                     CorrectOption = 2
+                },
+
+                //Questions for the Text: En dag i parken
+                new Question
+                {
+                    Id = 5,
+                    TextId = 2,
+                    Content = "Vad gör den lilla pojken och hans pappa i parken?",
+                    option1 = "De spelar fotboll",
+                    option2 = "De matar fåglar",
+                    option3 = "De köper glass och sitter i gräset",
+                    option4 = "De läser böcker på en bänk",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 6,
+                    TextId = 2,
+                    Content = "Vilken smak på glassen väljer pojken?",
+                    option1 = "Vanilj",
+                    option2 = "Choklad",
+                    option3 = "Jordgubb",
+                    option4 = "Citron",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 7,
+                    TextId = 2,
+                    Content = "Vad händer när flickan gör mål i fotbollsmatchen?",
+                    option1 = "Hunden skäller",
+                    option2 = "Alla klappar händerna",
+                    option3 = "Pojken gråter",
+                    option4 = "Någon ramlar",
+                    CorrectOption = 2
+                },
+
+                new Question
+                {
+                    Id = 8,
+                    TextId = 2,
+                    Content = "Vad gör den gamla mannen vid fontänen?",
+                    option1 = "Han matar duvor",
+                    option2 = "Han sover på en bänk",
+                    option3 = "Han läser en bok",
+                    option4 = "Han spelar gitarr",
+                    CorrectOption = 1
                 }
 
 
