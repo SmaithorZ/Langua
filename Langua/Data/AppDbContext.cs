@@ -609,7 +609,159 @@ namespace Langua.Data
                     option3 = "Han läser en bok",
                     option4 = "Han spelar gitarr",
                     CorrectOption = 1
+                },
+
+                //Questions for the Text: Lucas berättar om sin skola 
+                new Question
+                {
+                    Id = 9,
+                    TextId = 3,
+                    Content = "Vad heter skolan där Lucas går?",
+                    option1 = "Solgården",
+                    option2 = "Solskolan",
+                    option3 = "Skolgården",
+                    option4 = "Solbacken",
+                    CorrectOption = 2
+
+                },
+
+                new Question
+                {
+                    Id = 10,
+                    TextId = 3,
+                    Content = "Hur tar sig Lucas till skolan?",
+                    option1 = "Han går dit",
+                    option2 = "Han åker buss",
+                    option3 = "Han cyklar",
+                    option4 = "Han åker bil med sin mamma",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 11,
+                    TextId = 3,
+                    Content = "Var ligger Lucas klassrum?",
+                    option1 = "På första våningen",
+                    option2 = "Bredvid matsalen",
+                    option3 = "I källaren",
+                    option4 = "På andra våningen",
+                    CorrectOption = 4
+                },
+
+                new Question
+                {
+                    Id = 12,
+                    TextId = 3,
+                    Content = "Vad är Lucas favoritplats i klassrummet?",
+                    option1 = "Vid whiteboarden",
+                    option2 = "Nära bokhyllan",
+                    option3 = "Vid fönstret",
+                    option4 = "Bredvid dörren",
+                    CorrectOption = 3
+                },
+
+                //Questions for the Text: Min vän Anna
+
+                new Question
+                {
+                    Id = 13,
+                    TextId = 4,
+                    Content = "Hur länge har Elin och Anna varit vänner?",
+                    option1 = "Ett år",
+                    option2 = "Två år",
+                    option3 = "Tre år",
+                    option4 = "Fem år",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 14,
+                    TextId = 4,
+                    Content = "Vad hänger på väggen i Elins rum?",
+                    option1 = "En spegel",
+                    option2 = "Ett porträtt som Anna har ritat",
+                    option3 = "En karta över världen",
+                    option4 = " En affisch med musikband",
+                    CorrectOption = 2
+                },
+
+                new Question
+                {
+                    Id = 15,
+                    TextId = 4,
+                    Content = "Vad gör Elin och Anna ofta på helgerna?",
+                    option1 = "Går på bio",
+                    option2 = "Springer i parken",
+                    option3 = "Bakar muffins eller chokladkaka",
+                    option4 = "Tittar på serier",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 16,
+                    TextId = 4,
+                    Content = "Vilken typ av böcker tycker Anna om?",
+                    option1 = "Kärleksromaner",
+                    option2 = "Fakta-och historieböcker",
+                    option3 = "Äventyr och mysterier",
+                    option4 = "Diktsamlingar",
+                    CorrectOption = 3
+                },
+
+
+                 //Questions for the Text: Erik glömmer sitt paraply
+
+                new Question
+                {
+                    Id = 17,
+                    TextId = 5,
+                    Content = "När inser Erik att han har glömt sitt paraply?",
+                    option1 = "När han dricker sitt kaffe",
+                    option2 = "När han går ut genom dörren",
+                    option3 = "När han ser andra med paraply",
+                    option4 = "När det börjar regna vid busshållplatsen ",
+                    CorrectOption = 4  
+                },
+
+                new Question
+                {
+                    Id = 18,
+                    TextId = 5,
+                    Content = "Vad händer när Erik väntar på bussen?",
+                    option1 = "Han träffar en vän",
+                    option2 = "Det börjar regna kraftigt",
+                    option3 = "Bussen kommer i tid",
+                    option4 = "Han hittar ett paraply",
+                    CorrectOption = 2 
+                },
+
+                new Question
+                {
+                    Id = 19,
+                    TextId = 5,
+                    Content = "Hur känner sig Erik när han sitter på bussen?",
+                    option1 = "Han pratar med folk",
+                    option2 = "Han är glad och sjunger",
+                    option3 = "Han sitter tyst och tittar ut genom fönstret ",
+                    option4 = "Han sover",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 20,
+                    TextId = 5,
+                    Content = "Vad säger Eriks kollega när han kommer till jobbet?",
+                    option1 = "Du ser väldigt trött ut!",
+                    option2 = "Vill du ha en kopp kaffe?",
+                    option3 = "Du borde nog kolla vädret innan du går hemifrån!",
+                    option4 = "Varför tog du med paraply?",
+                    CorrectOption = 3 
                 }
+
 
 
                 );
