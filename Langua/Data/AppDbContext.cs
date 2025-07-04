@@ -760,9 +760,60 @@ namespace Langua.Data
                     option3 = "Du borde nog kolla vädret innan du går hemifrån!",
                     option4 = "Varför tog du med paraply?",
                     CorrectOption = 3 
-                }
+                },
 
                 //Questions for the Text: Min familj och våra traditioner
+
+                new Question
+                {
+                    Id =21,
+                    TextId = 6,
+                    Content = "Vad jobbar huvudpersonens storasyster med?",
+                    option1 = "Lärare",
+                    option2 = "Sjuksköterska",
+                    option3 = "Elektriker",
+                    option4 = "Kafébiträde",
+                    CorrectOption = 2
+                },
+
+                new Question
+                {
+                    Id = 22,
+                    TextId = 6,
+                    Content = "Vad brukar familjen göra på söndagar?",
+                    option1 = "Gå på bio tillsammans",
+                    option2 = "Städa hela huset",
+                    option3 = "Äta middag och spela sällskapsspel",
+                    option4 = "Titta på sport",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id =  23,
+                    TextId = 6,
+                    Content = "Vad tycker pappan om att göra?",
+                    option1 = "Spela gitarr",
+                    option2 = "Läsa böcker",
+                    option3 = "Träna på gym",
+                    option4 = "Fixa saker i huset",
+                    CorrectOption = 4
+                },
+
+                new Question
+                {
+                    Id = 24,
+                    TextId = 6,
+                    Content = "Vad heter familjens katt och vad gillar den att göra?",
+                    option1 = "Maja – ligga i solen på balkongen",
+                    option2 = "Molly – jaga möss i trädgården",
+                    option3 = "Max – sova under soffan",
+                    option4 = "Mimmi – leka med barnen",
+                    CorrectOption = 1
+                }
+
+
+                //Questions for the Text: Linas söndag
 
                 );
         }
