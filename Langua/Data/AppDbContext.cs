@@ -810,10 +810,61 @@ namespace Langua.Data
                     option3 = "Max – sova under soffan",
                     option4 = "Mimmi – leka med barnen",
                     CorrectOption = 1
-                }
+                },
 
 
                 //Questions for the Text: Linas söndag
+
+                new Question
+                {
+                    Id = 25,
+                    TextId = 7,
+                    Content = "Vad gör Lina först på söndagsmorgonen efter att hon har vaknat?",
+                    option1 = "Går ut på promenad",
+                    option2 = "Tar en lång dusch",
+                    option3 = "Ställer väckarklockan",
+                    option4 = "Städar lägenheten",
+                    CorrectOption = 2
+                },
+
+                new Question
+                {
+                    Id = 26,
+                    TextId = 7,
+                    Content = "Vad brukar Lina göra vid elva på förmiddagen?",
+                    option1 = "Äta lunch",
+                    option2 = "Träffa sina föräldrar",
+                    option3 = "Gå på promenad i parken ",
+                    option4 = "Laga middag",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 27,
+                    TextId = 7,
+                    Content = "Vad gör Lina efter promenaden?",
+                    option1 = "Tittar på film",
+                    option2 = "Handlar mat och planerar middagar",
+                    option3 = "Tränar på gymmet",
+                    option4 = "Besöker en vän",
+                    CorrectOption = 2
+                },
+
+                new Question
+                {
+                    Id = 28,
+                    TextId = 7,
+                    Content = "Vad gör Lina på kvällen?",
+                    option1 = "Går till biblioteket",
+                    option2 = "Städar hela lägenheten",
+                    option3 = "Lagar mat och ser en film eller läser en bok",
+                    option4 = "Går ut med vänner",
+                    CorrectOption = 3
+                }
+
+
+                //Questions for the Text: Mitt rum i lägenheten
 
                 );
         }
