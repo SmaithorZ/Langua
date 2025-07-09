@@ -961,9 +961,59 @@ namespace Langua.Data
                     option3 = "Att hantera stress och vara vänlig i svåra situationer",
                     option4 = "Att sälja produkter via e-post",
                     CorrectOption = 3
-                }
+                },
 
                 //Questions for the Text: Min garderob
+
+                new Question
+                {
+                    Id = 37,
+                    TextId = 10,
+                    Content = "Vilken typ av tröja tycker personen mest om att använda?",
+                    option1 = "T-shirts",
+                    option2 = "Skjortor",
+                    option3 = "Hoodies ",
+                    option4 = " Stickade tröjor",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 38,
+                    TextId = 10,
+                    Content = "Hur ser personens favorithoodie ut?",
+                    option1 = "Den är grå med dragkedja",
+                    option2 = "Den är mörkblå och har en stor ficka fram",
+                    option3 = "Den är röd med mönster",
+                    option4 = "Den är vit och tunn",
+                    CorrectOption = 2
+                },
+
+                new Question
+                {
+                    Id  = 39,
+                    TextId = 10,
+                    Content = "Vad använder personen nästan varje dag?",
+                    option1 = "Ett par svarta jeans",
+                    option2 = "En mönstrad skjorta",
+                    option3 = "En vinterjacka",
+                    option4 = "Ett par blå shorts",
+                    CorrectOption =  1
+                },
+
+                new Question
+                {
+                    Id = 40,
+                    TextId = 10,
+                    Content = "Var förvaras mössor, vantar och halsdukar?",
+                    option1 = "I en låda under sängen",
+                    option2 = "På en krok bakom dörren",
+                    option3 = "I byrålådan",
+                    option4 = "På en hylla högst upp i garderoben",
+                    CorrectOption = 4
+                }
+
+                //Questions for the Text: Göteborg
 
                 );
         }
