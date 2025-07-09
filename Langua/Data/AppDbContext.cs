@@ -861,10 +861,59 @@ namespace Langua.Data
                     option3 = "Lagar mat och ser en film eller läser en bok",
                     option4 = "Går ut med vänner",
                     CorrectOption = 3
-                }
-
+                },
 
                 //Questions for the Text: Mitt rum i lägenheten
+
+                new Question
+                {
+                    Id = 29,
+                    TextId = 8,
+                    Content = "Vad finns i personens rum enligt texten?",
+                    option1 = "En dubbelsäng och en TV",
+                    option2 = "En enkelsäng, skrivbord, stol och bokhylla",
+                    option3 = "Ett kök och ett matbord",
+                    option4 = " En våningssäng och ett piano",
+                    CorrectOption = 2
+                },
+
+                new Question
+                {
+                    Id = 30,
+                    TextId = 8,
+                    Content = "Vad står under fönstret i rummet?",
+                    option1 = "Ett skrivbord",
+                    option2 = "En bokhylla",
+                    option3 = "En liten soffa",
+                    option4 = " En garderob",
+                    CorrectOption =  3
+                },
+
+                new Question
+                {
+                    Id = 31,
+                    TextId = 8,
+                    Content = "Vilken växt är personens favorit?",
+                    option1 = "En ros",
+                    option2 = "En orkidé",
+                    option3 = "En solros",
+                    option4 = "En liten kaktus",
+                    CorrectOption = 4
+                },
+
+                new Question
+                {
+                    Id = 32,
+                    TextId = 8,
+                    Content = "Vad tycker personen bäst om med sitt rum?",
+                    option1 = "Att det är stort och fullt av teknik",
+                    option2 = "De gröna väggarna och att det är tyst",
+                    option3 = "Att det finns mycket mat",
+                    option4 = "Att det ligger nära universitetet",
+                    CorrectOption = 2
+                }
+
+                //Questions for the Text: Erik skriver ett personligt brev
 
                 );
         }
