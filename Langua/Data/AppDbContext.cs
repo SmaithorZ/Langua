@@ -911,9 +911,59 @@ namespace Langua.Data
                     option3 = "Att det finns mycket mat",
                     option4 = "Att det ligger nära universitetet",
                     CorrectOption = 2
-                }
+                },
 
                 //Questions for the Text: Erik skriver ett personligt brev
+
+                new Question
+                {
+                    Id = 33,
+                    TextId = 9,
+                    Content = "Var bor Erik och med vem?",
+                    option1 = "I Stockholm med sina föräldrar",
+                    option2 = "I Malmö ensam",
+                    option3 = "I Göteborg med sin sambo",
+                    option4 = "I Uppsala med sin syster",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 34,
+                    TextId = 9,
+                    Content = "Vilket jobb söker Erik?",
+                    option1 = "Säljare",
+                    option2 = "Kundserviceassistent",
+                    option3 = "Lärare",
+                    option4 = "Systemutvecklare",
+                    CorrectOption = 2
+                },
+
+                new Question
+                {
+                    Id = 35,
+                    TextId = 9,
+                    Content = "Vad är några av Eriks styrkor enligt brevet?",
+                    option1 = "Kreativ, spontan och sportig",
+                    option2 = "Ansvarsfull, noggrann och tystlåten",
+                    option3 = "Tålamodig, ansvarsfull och noggrann",
+                    option4 = "Självsäker, envis och flexibel",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 36,
+                    TextId = 9,
+                    Content = "Vad lärde sig Erik på sitt tidigare jobb på callcenter?",
+                    option1 = "Att använda Excel och PowerPoint",
+                    option2 = "Att jobba hemifrån",
+                    option3 = "Att hantera stress och vara vänlig i svåra situationer",
+                    option4 = "Att sälja produkter via e-post",
+                    CorrectOption = 3
+                }
+
+                //Questions for the Text: Min garderob
 
                 );
         }
