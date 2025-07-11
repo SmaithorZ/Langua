@@ -1011,9 +1011,160 @@ namespace Langua.Data
                     option3 = "I byrålådan",
                     option4 = "På en hylla högst upp i garderoben",
                     CorrectOption = 4
-                }
+                },
 
                 //Questions for the Text: Göteborg
+
+                new Question
+                {
+                    Id = 41,
+                    TextId = 11,
+                    Content = "Hur länge stannade de i Göteborg?",
+                    option1 = "Två dagar",
+                    option2 = "Fyra dagar",
+                    option3 = "Tre dagar",
+                    option4 = "En vecka",
+                    CorrectOption = 3
+
+                },
+
+                new Question
+                {
+                    Id = 42,
+                    TextId = 11,
+                    Content = "Vad gillade de mest med Göteborg enligt texten?",
+                    option1 = "Skyskraporna och nattlivet",
+                    option2 = "Parkerna och närheten till havet",
+                    option3 = "Shoppinggalleriorna",
+                    option4 = "Historiska museer",
+                    CorrectOption = 2
+                },
+
+                new Question
+                {
+                    Id = 43,
+                    TextId = 11,
+                    Content = "Vad gjorde de i Slottsskogen?",
+                    option1 = "De tältade över natten",
+                    option2 = "De promenerade bland djur och grönområden",
+                    option3 = "De åt på ett kafé",
+                    option4 = "De spelade fotboll med lokalbefolkningen",
+                    CorrectOption = 2
+                },
+
+                new Question
+                {
+                    Id = 44,
+                    TextId = 11,
+                    Content = "Vad gjorde de i Liseberg?",
+                    option1 = "De åkte karuseller, spelade på lyckohjul och åt sockervadd",
+                    option2 = "De gick på museum",
+                    option3 = "De såg en teaterföreställning",
+                    option4 = "De badade i en bassäng",
+                    CorrectOption = 1 
+                },
+
+                //Questions for the Text:  Sara och Erik bokar en resa
+
+                new Question
+                {
+                    Id = 45,
+                    TextId = 12,
+                    Content = "Vart vill Sara och Erik resa i sommar?",
+                    option1 = "Spanien",
+                    option2 = "Grekland",
+                    option3 = "Italien ",
+                    option4 = "Frankrike",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 46,
+                    TextId = 12,
+                    Content = "Hur länge vill de stanna i Rom?",
+                    option1 = "Två veckor",
+                    option2 = "Tio dagar",
+                    option3 = "En helg",
+                    option4 = "En vecka",
+                    CorrectOption = 4
+                },
+
+                new Question
+                {
+                    Id = 47,
+                    TextId = 12,
+                    Content = "Vad ingår i deras bokningspaket?",
+                    option1 = "Endast flyg",
+                    option2 = "Flyg, hotell och frukost ",
+                    option3 = "Flyg och hyrbil",
+                    option4 = "Hotell och middag",
+                    CorrectOption = 2
+                },
+
+                new Question
+                {
+                    Id = 48,
+                    TextId = 12,
+                    Content = "Varför vill de inte hyra bil?",
+                    option1 = "De har inte körkort",
+                    option2 = "De vill spara pengar",
+                    option3 = "De tänker promenera och åka tunnelbana",
+                    option4 = "Det finns inga bilar lediga",
+                    CorrectOption = 3
+                },
+
+                //Question for the text: Familjen Eriksson på botaniska trädgården
+
+                new Question
+                {
+                    Id = 49,
+                    TextId = 13,
+                    Content = "Vad tycker Sofia mest om i den botaniska trädgården?",
+                    option1 = "Körsbärsträd",
+                    option2 = "Kaktusar",
+                    option3 = "Orkidéer",
+                    option4 = "Gamla ekar",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 50,
+                    TextId = 13,
+                    Content = "Varför fotograferar Johan träd?",
+                    option1 = "För att skicka bilder till en tävling",
+                    option2 = "För sitt fotoprojekt i skolan",
+                    option3 = "För att visa sin farmor",
+                    option4 = "För att sälja dem online",
+                    CorrectOption = 2
+                },
+
+                new Question
+                {
+                    Id = 51,
+                    TextId = 13,
+                    Content = "Vad gillar mamma Maria mest med den japanska delen av trädgården?",
+                    option1 = "Växthusen",
+                    option2 = "De gamla trädens rötter",
+                    option3 = "Fåglarna i träden",
+                    option4 = "Dammar, stenbroar och körsbärsträd",
+                    CorrectOption = 4
+                },
+
+                new Question
+                {
+                    Id = 52,
+                    TextId = 13,
+                    Content = "Vad gör familjen alltid efter promenaden i trädgården?",
+                    option1 = "Går hem direkt",
+                    option2 = "Sätter sig vid caféet och fikar",
+                    option3 = "Besöker ett museum",
+                    option4 = "Tar en guidad tur",
+                    CorrectOption = 2
+                }
+
+                //Questions for the Text: Kladdkakans dag i Sverige
 
                 );
         }

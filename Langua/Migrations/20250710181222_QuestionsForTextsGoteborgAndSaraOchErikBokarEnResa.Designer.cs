@@ -3,6 +3,7 @@ using Langua.Data;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Infrastructure;
 using Microsoft.EntityFrameworkCore.Metadata;
+using Microsoft.EntityFrameworkCore.Migrations;
 using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 
 #nullable disable
@@ -10,9 +11,11 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Langua.Migrations
 {
     [DbContext(typeof(AppDbContext))]
-    partial class AppDbContextModelSnapshot : ModelSnapshot
+    [Migration("20250710181222_QuestionsForTextsGoteborgAndSaraOchErikBokarEnResa")]
+    partial class QuestionsForTextsGoteborgAndSaraOchErikBokarEnResa
     {
-        protected override void BuildModel(ModelBuilder modelBuilder)
+        /// <inheritdoc />
+        protected override void BuildTargetModel(ModelBuilder modelBuilder)
         {
 #pragma warning disable 612, 618
             modelBuilder
@@ -589,50 +592,6 @@ namespace Langua.Migrations
                             option2 = "De vill spara pengar",
                             option3 = "De tänker promenera och åka tunnelbana",
                             option4 = "Det finns inga bilar lediga"
-                        },
-                        new
-                        {
-                            Id = 49,
-                            Content = "Vad tycker Sofia mest om i den botaniska trädgården?",
-                            CorrectOption = 3,
-                            TextId = 13,
-                            option1 = "Körsbärsträd",
-                            option2 = "Kaktusar",
-                            option3 = "Orkidéer",
-                            option4 = "Gamla ekar"
-                        },
-                        new
-                        {
-                            Id = 50,
-                            Content = "Varför fotograferar Johan träd?",
-                            CorrectOption = 2,
-                            TextId = 13,
-                            option1 = "För att skicka bilder till en tävling",
-                            option2 = "För sitt fotoprojekt i skolan",
-                            option3 = "För att visa sin farmor",
-                            option4 = "För att sälja dem online"
-                        },
-                        new
-                        {
-                            Id = 51,
-                            Content = "Vad gillar mamma Maria mest med den japanska delen av trädgården?",
-                            CorrectOption = 4,
-                            TextId = 13,
-                            option1 = "Växthusen",
-                            option2 = "De gamla trädens rötter",
-                            option3 = "Fåglarna i träden",
-                            option4 = "Dammar, stenbroar och körsbärsträd"
-                        },
-                        new
-                        {
-                            Id = 52,
-                            Content = "Vad gör familjen alltid efter promenaden i trädgården?",
-                            CorrectOption = 2,
-                            TextId = 13,
-                            option1 = "Går hem direkt",
-                            option2 = "Sätter sig vid caféet och fikar",
-                            option3 = "Besöker ett museum",
-                            option4 = "Tar en guidad tur"
                         });
                 });
 
