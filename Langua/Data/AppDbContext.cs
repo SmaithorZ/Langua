@@ -1212,9 +1212,59 @@ namespace Langua.Data
                     option3 = "Den smakar mindre",
                     option4 = "Den blir hårdare",
                     CorrectOption = 2
-                }
+                },
 
                 //Questions for the Text:Spelens värld – mer än bara underhållning
+
+                new Question
+                {
+                    Id = 58,
+                    TextId = 15,
+                    Content = "Vilka färdigheter kan man utveckla genom att spela multiplayer-spel?",
+                    option1 = "Bara reflexer och snabbhet",
+                    option2 = "Kommunikation, lagarbete och strategiskt tänkande",
+                    option3 = "Matlagning och hantverk",
+                    option4 = " Läsa och skriva poesi",
+                    CorrectOption = 2
+                },
+
+                new Question
+                {
+                    Id = 59,
+                    TextId = 15,
+                    Content = "Vad är e-sport enligt texten?",
+                    option1 = "Ett enkelt spel för barn",
+                    option2 = "Ett sätt att spela ensam",
+                    option3 = "En global företeelse där professionella tävlar och många tittar online",
+                    option4 = " Ett träningsprogram för gym",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 60,
+                    TextId = 15,
+                    Content = "Vilken kritik nämns i texten om spel?",
+                    option1 = "Spel kan leda till beroende och påverka livet negativt ",
+                    option2 = "De förstör grafikkort",
+                    option3 = "Spel är för dyra",
+                    option4 = "De är för svåra att förstå",
+                    CorrectOption = 1
+                },
+
+                new Question
+                {
+                    Id = 61,
+                    TextId = 15,
+                    Content = "Vad säger texten om framtiden för spelindustrin?",
+                    option1 = "Den kommer troligen att minska",
+                    option2 = "Den är osäker på grund av bristande intresse",
+                    option3 = "Den ser spännande ut med ny teknik som VR och AI ",
+                    option4 = "Den kommer att försvinna helt",
+                    CorrectOption = 3
+                }
+
+                //Questions for the Text: Svensk natur är som en sagovärld
 
                 );
         }
