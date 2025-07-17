@@ -1162,9 +1162,59 @@ namespace Langua.Data
                     option3 = "Besöker ett museum",
                     option4 = "Tar en guidad tur",
                     CorrectOption = 2
-                }
+                },
 
                 //Questions for the Text: Kladdkakans dag i Sverige
+
+                new Question
+                {
+                    Id = 54,
+                    TextId = 14,
+                    Content = "När firas Kladdkakans dag i Sverige?",
+                    option1 = "4 oktober",
+                    option2 = "25 december",
+                    option3 = "7 november",
+                    option4 = "1 maj",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 55,
+                    TextId = 14,
+                    Content = "Vad är kladdkaka?",
+                    option1 = "En söt, kladdig chokladkaka",
+                    option2 = "En mjuk kaka med sylt",
+                    option3 = "En frasig smördegskaka",
+                    option4 = "En sockerkaka med vanilj",
+                    CorrectOption = 1
+                },
+
+                new Question
+                {
+                    Id = 56,
+                    TextId = 14,
+                    Content = "Vilken ingrediens används INTE i kladdkakan enligt receptet?",
+                    option1 = "Kakao",
+                    option2 = "Smör",
+                    option3 = "Mjölk",
+                    option4 = "Vetemjöl",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 57,
+                    TextId = 14,
+                    Content = "Vad händer om du gräddar kladdkakan kortare tid?",
+                    option1 = "Den blir torrare",
+                    option2 = "Den blir kladdigare",
+                    option3 = "Den smakar mindre",
+                    option4 = "Den blir hårdare",
+                    CorrectOption = 2
+                }
+
+                //Questions for the Text:Spelens värld – mer än bara underhållning
 
                 );
         }
