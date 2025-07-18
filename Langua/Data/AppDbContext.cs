@@ -1262,9 +1262,57 @@ namespace Langua.Data
                     option3 = "Den ser spännande ut med ny teknik som VR och AI ",
                     option4 = "Den kommer att försvinna helt",
                     CorrectOption = 3
-                }
+                },
 
                 //Questions for the Text: Svensk natur är som en sagovärld
+
+                new Question
+                {
+                    Id = 62,
+                    TextId = 16,
+                    Content = "Hur gammal är Elin som berättar i texten?",
+                    option1 = "Sex år",
+                    option2 = "Sju år",
+                    option3 = "Åtta år",
+                    option4 = "Nio år",
+                    CorrectOption = 3
+                },
+
+                new Question
+                {
+                    Id = 63,
+                    TextId = 16,
+                    Content = "Vad ser Elin när hon går i skogen?",
+                    option1 = "En ekorre som hoppar från gren till gren ",
+                    option2 = "Hjortar och rävar",
+                    option3 = "En björn och en uggla",
+                    option4 = "En bäver som bygger ett bo",
+                    CorrectOption = 1
+                },
+
+                new Question
+                {
+                    Id = 64,
+                    TextId = 16,
+                    Content = "Vad gör Elin vid sjön?",
+                    option1 = "Hon badar i vattnet",
+                    option2 = "Hon fiskar med sin pappa",
+                    option3 = "Hon bygger ett sandslott",
+                    option4 = "Hon plockar en blå blomma och sätter den i håret",
+                    CorrectOption = 4
+                },
+
+                new Question
+                {
+                    Id = 65,
+                    TextId = 16,
+                    Content = "Vad säger Elins mamma om naturen?",
+                    option1 = "Att man inte får plocka blommor",
+                    option2 = "Att naturen är tråkig på vintern",
+                    option3 = "Att vi måste ta hand om den för att den är en skatt",
+                    option4 = "Att man alltid måste ta med sig ett tält",
+                    CorrectOption = 3
+                }
 
                 );
         }
