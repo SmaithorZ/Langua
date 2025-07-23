@@ -1,4 +1,5 @@
 ﻿using Langua.Data;
+using Langua.Models;
 using Microsoft.AspNetCore.Mvc;
 
 namespace Langua.Controllers
@@ -27,7 +28,15 @@ namespace Langua.Controllers
                 return NotFound();
             }
 
-            return View("ReadText",text);
+            var questions = _context.Questions.Where(q => q.TextId == text.Id).ToList();
+
+            var viewModel = new TextWithQuestionsViewModel
+            {
+                Text = text,
+                Questions = questions
+            };
+
+            return View(viewModel);
         }
 
         public IActionResult Index()

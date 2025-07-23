@@ -1,7 +1,7 @@
-﻿@model Text
+﻿@model TextWithQuestionsViewModel
 
 @{
-    ViewData["Title"] = Model.TextTitle;
+    ViewData["Title"] = Model.Text.TextTitle;
 }
 
 <style>
@@ -30,16 +30,36 @@
         border-radius: 8px;
         box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
     }
+
+    .option-label {
+        display: inline-block;
+        width: 26px;
+        height: 26px;
+        border-radius: 50%;
+        background-color: #e9ecef;
+        color: #6c757d;
+        text-align: center;
+        line-height: 26px;
+        font-weight: bold;
+        margin-right: 10px;
+        font-size: 0.9rem;
+    }
+
+    .option-btn {
+        justify-content: flex-start;
+        transition: background-color 0.3s, color 0.3s;
+    }
+
 </style>
 
-<h2 class="text-center">@Model.TextTitle (@Model.Level.ToUpper())</h2>
-<p><strong>Language: </strong>@Model.Language</p>
+<h2 class="text-center">@Model.Text.TextTitle (@Model.Text.Level.ToUpper())</h2>
+<p><strong>Language: </strong>@Model.Text.Language</p>
 
 <div class="flex-container">
     <!-- LEFT COLUMN - TEXT -->
     <div class="left-column">
         <div class="border border-2 border-dark-subtle rounded p-3 bg-light shadow-lg">
-            <p class="preserve-linebreaks">@Html.Raw(Model.LanguageText.Replace("\n", "<br>"))</p>
+            <p class="preserve-linebreaks">@Html.Raw(Model.Text.LanguageText.Replace("\n", "<br>"))</p>
         </div>
     </div>
 
@@ -48,8 +68,44 @@
         <h5>Did you understand the text?</h5>
         <p>Please answer the following questions of understanding:</p>
 
-        <!-- Placeholder for now -->
-        <p><em>Questions will appear here soon...</em></p>
+        <!-- QUESTIONS -->
+        @for (int i = 0; i < Model.Questions.Count; i++)
+        {
+            var q = Model.Questions[i];
+            <div class="mb-4 p-3 border rounded shadow-sm" id="question-@i" data-correct="@q.CorrectOption">
+                <div class="mb-2">
+                    <span class="badge bg-danger">Question @(i + 1):</span>
+                </div>
+                <p class="fw-semibold">@q.Content</p>
+
+                <div class="row g-2">
+                    <div class="col-6">
+                        <button type="button" class="btn btn-light border option-btn w-100 d-flex align-items-center" data-option="1">
+                            <span class="option-label">a</span> @q.option1
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-light border option-btn w-100 d-flex align-items-center" data-option="2">
+                            <span class="option-label">b</span> @q.option2
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-light border option-btn w-100 d-flex align-items-center" data-option="3">
+                            <span class="option-label">c</span> @q.option3
+                        </button>
+                    </div>
+                    <div class="col-6">
+                        <button type="button" class="btn btn-light border option-btn w-100 d-flex align-items-center" data-option="4">
+                            <span class="option-label">d</span> @q.option4
+                        </button>
+                    </div>
+                </div>
+
+                <div class="mt-2 feedback text-muted"></div>
+            </div>
+        }
+
+
     </div>
 </div>
 
@@ -58,3 +114,46 @@
         Go Back
     </a>
 </div>
+
+<script>
+    document.addEventListener('DOMContentLoaded', function () {
+        const questionBlocks = document.querySelectorAll('[id^="question-"]');
+
+        questionBlocks.forEach(block => {
+            const correct = block.getAttribute('data-correct');
+            const buttons = block.querySelectorAll('.option-btn');
+            const feedback = block.querySelector('.feedback');
+
+            buttons.forEach(btn => {
+                btn.addEventListener('click', function () {
+                    const selected = btn.getAttribute('data-option');
+
+                    // Disable all buttons
+                    buttons.forEach(b => b.disabled = true);
+
+                    if (selected === correct) {
+                        btn.classList.remove('btn-outline-primary');
+                        btn.classList.add('btn-success');
+                        feedback.textContent = "✅ Correct!";
+                        feedback.classList.remove('text-danger');
+                        feedback.classList.add('text-success');
+                    } else {
+                        btn.classList.remove('btn-outline-primary');
+                        btn.classList.add('btn-danger');
+                        feedback.innerHTML = "❌ Wrong. The correct answer was: ";
+
+                        const correctBtn = block.querySelector(`[data-option="${correct}"]`);
+                        correctBtn.classList.remove('btn-outline-primary');
+                        correctBtn.classList.add('btn-success');
+
+                        feedback.classList.remove('text-success');
+                        feedback.classList.add('text-danger');
+
+                        feedback.innerHTML += `<strong>${correctBtn.textContent}</strong>`;
+                    }
+                });
+            });
+        });
+    });
+</script>
+
